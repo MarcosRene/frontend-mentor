@@ -7,6 +7,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    background: #f6f9fe;
 }
 
 .container {
@@ -37,27 +38,37 @@ body {
     box-shadow: 0px 2px 12px -6px rgb(154, 82, 255);
 }
 
-.title h2 {
+.intro h2{
+    font-weight: 700 !important;
+}
+
+.intro h2,
+.content h2 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     color: #00252E;
     margin-top: 35px;
     margin-bottom: 20px;
 }
 
-.title p {
+
+.intro p,
+.content p {
     color: #808D99;
     line-height: 28px;
 }
 
-#intro, #content {
+#intro,
+#wrapper {
     text-align: center;
     padding: 10px;
+    margin-bottom: 25%;
 }
 
-/* .img-response img{
-    width: 95%;
-} */
+#wrapper-card{
+    padding-bottom: 15%;
+}
+
 
 .btn-intro {
     background-color: #FF52BF;
@@ -65,7 +76,7 @@ body {
     border-radius: 4px;
     color: #ffffff;
     font-size: 14px;
-    padding: 12px 40px;
+    padding: 15px 40px;
     cursor: pointer;
     margin-top: 30px;
     box-shadow: 0px 0px 5px 0px rgb(255, 82, 191);
@@ -89,27 +100,25 @@ body {
     color: #ffffff;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
 footer{
     background-color: #00252E;
 }
 
-.link li a{
+.link li a,
+.link2 li a{
     text-decoration: none;
     color: #ffffff;
     line-height: 40px;
 }
 
-.link{
+.link,
+.link2{
     list-style: none;
 }
 
 .form-footer{
     text-align: center;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
 }
 
 .form-footer h2{
@@ -123,7 +132,6 @@ footer{
 .input{
     border-radius: 2px;
     border: 1px solid #ffffff;
-    display: inline;
     width: 100%;
     padding: 15px 0;
     margin-bottom: 15px;
@@ -135,7 +143,6 @@ footer{
     color: #ffffff;
     border-radius: 2px;
     border: 1px solid #FF52BF;
-    display: inline;
     width: 100%;
     padding: 15px;
     cursor: pointer;
@@ -148,16 +155,42 @@ footer{
 
 .network{
     text-align: center;
-    color: #ffffff;
     font-size: 26px;
+    color: #ffffff;
 }
 
-@media (min-width: 375px) and (max-width: 1440px){
+.card{
+    width: 600px;
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: 0px 8px 40px -25px rgb(154, 82, 255);
+    position: relative;
+}
+
+.card-body {
+    padding: 40px 0;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #00252E;
+    margin-bottom: 5px;
+}
+.card-subtitle {
+    color: #808D99;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+
+@media (min-width: 375px) and (max-width: 520px){
     .container {
         width: 96%;
     }
 
-    h1 img {
+    h1 img{
         width: 40%;
     }
 
@@ -166,34 +199,9 @@ footer{
     }
 
     .img-response img {
-        position: relative;
         margin-top: 55px;
         margin-bottom: 35px;
-        width: 95%;
-    }
-
-    .card {
-        height: 100%;
-        justify-content: center;
-        justify-items: center;
-        border-radius: 3px;
-        box-shadow: 0px 8px 30px -14px rgb(154, 82, 255)
-    }
-
-    .card-body {
-        padding: 40px 0;
-    }
-
-    .card-title {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 700;
-        font-size: 16px;
-        color: #00252E;
-        margin-bottom: 5px;
-    }
-    .card-subtitle {
-        color: #808D99;
-        font-size: 14px;
+        width: 95% !important;
     }
 
     footer img{
@@ -204,14 +212,11 @@ footer{
         margin-bottom: 70px;
     }
 
-    .link{
-        margin: 45px 0;
-    }
-
     .form-footer,
     .network,
-    .link{
-        padding: 10px;
+    .link,
+    .link2{
+        padding: 0 10px;
     }
 
     .img-footer{
@@ -220,8 +225,163 @@ footer{
         display: flex;
     }
 
+    .content h2, p{
+        text-align: center;
+    }
+
     .img-footer img{
         margin-top: 60px;
     }
+    
+    #wrapper-card{
+        padding-top: 15%;
+    }
+
+    .card {
+        width: 100% !important;
+        text-align: center;
+        border-radius: 3px;
+        box-shadow: 0px 8px 40px -25px rgb(154, 82, 255);
+    }
+
+    .card-subtitle{
+        font-size: 13px;
+    }
 
 }
+
+@media(min-width: 520px) and (max-width: 1440px){
+    
+    .container{
+        width: 90%;
+    }
+
+    h1, nav{
+        margin-top: 50px;
+    }
+
+    .btn-menu{
+        padding: 7px 35px;
+    }
+
+    #intro p{
+        width: 50%;
+        position: relative;
+        left: 25%;
+   }
+
+    .img-response img{
+        width: 60% !important;
+        margin-top: 40px;
+    }
+
+    .float_one img{
+        width: 45% !important;
+        margin-right: 90px;
+        float: left;
+    }
+
+    .float_two{
+        text-align: start;
+    }
+
+    .card{
+        padding: 3rem 0;
+    }
+
+    #wrapper-card{
+        position: relative;
+        justify-content: center;
+        display: flex;
+        padding-top: 15%;
+    }
+    
+    .card-title {
+        font-size: 30px;
+    }
+
+    .card-subtitle{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    footer img{
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+
+    .network,
+    .attribution{
+        position: absolute;
+        left: 5%;
+    }
+    .attribution{
+       margin: 40px 0;
+    }
+
+    .form-footer{
+        position: absolute;
+        top: 0;
+        left: 70%;
+        width: 30%;
+    }
+
+    .form-footer h2, p{
+        text-align: start;
+    }
+
+    .input{
+        border-radius: 5px;
+    }
+
+    .input-submit{
+        background-color: #FF52BF;
+        color: #ffffff;
+        border-radius: 2px;
+        border: 1px solid #FF52BF;
+        padding: 15px;
+        cursor: pointer;
+        width: 50%;
+        margin-left: 50%;
+    }
+
+    footer{
+        position: relative;
+        height: 450px;
+    }
+
+    .link{
+        position: absolute;
+        left: 30%;
+    }
+
+    .link2{
+        position: absolute;
+        left: 50%;
+        top: 0;
+    }
+}
+
+/* .object::before{
+    content: '';
+    transform: rotate(-45deg);
+    width: 200px;
+    height: 420px;
+    border-radius: 30px;
+    background: #ffffff;
+    position: absolute;
+    right: 300px;
+}
+
+.object-colors::before{
+    content: '';
+    transform: rotate(-30deg);
+    width: 60%;
+    height: 90%;
+    border-radius: 0px;
+    background: linear-gradient(rgb(255, 82, 191), rgb(154, 82, 255));
+    position: absolute;
+    left: 255px;
+    top: -100px;
+} */
+
