@@ -51,11 +51,24 @@ body {
     margin-bottom: 20px;
 }
 
-
 .intro p,
 .content p {
     color: #808D99;
     line-height: 28px;
+}
+
+.intro p{
+    text-align: center;
+}
+
+#intro{
+    padding-bottom: 4rem !important;
+}
+
+.img-response img{
+    width: 80vw;
+    max-width: 700px;
+    margin: 50px 0;
 }
 
 #intro,
@@ -65,10 +78,13 @@ body {
     margin-bottom: 25%;
 }
 
-#wrapper-card{
+#wrapper-card {
     padding-bottom: 15%;
 }
 
+.obj {
+    overflow: hidden;
+}
 
 .btn-intro {
     background-color: #FF52BF;
@@ -132,8 +148,8 @@ footer{
 .input{
     border-radius: 2px;
     border: 1px solid #ffffff;
-    width: 100%;
-    padding: 15px 0;
+    width: 97%;
+    padding: 15px 5px;
     margin-bottom: 15px;
     margin-top: 15px;
 }
@@ -171,7 +187,7 @@ footer{
     padding: 40px 0;
 }
 
-.card-title {
+.card-title {   
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -185,9 +201,10 @@ footer{
 }
 
 
-@media (min-width: 375px) and (max-width: 520px){
+@media (min-width: 375px) and (max-width: 620px){
     .container {
         width: 96%;
+        position: relative;
     }
 
     h1 img{
@@ -198,10 +215,8 @@ footer{
         margin-top: 18px;
     }
 
-    .img-response img {
-        margin-top: 55px;
-        margin-bottom: 35px;
-        width: 95% !important;
+    .float_one{
+        margin-left: 30px;
     }
 
     footer img{
@@ -248,10 +263,33 @@ footer{
         font-size: 13px;
     }
 
+    .object {
+        width: 165%;
+        height: 84%;
+        position: absolute;
+        right: -67%;
+        top: 17%;
+        border-radius: 30px;
+        transform: rotate(55deg);
+        background: #ffffff;
+        z-index: -2;
+    }
+
+    .object-colors {
+        width: 110%;
+        height: 105%;
+        border-radius: 60px;
+        transform: rotate(-28deg);
+        background: linear-gradient(rgb(255, 82, 191), rgb(154, 82, 255));
+        position: absolute;
+        top: -16%;
+        left: 90%;
+        z-index: -1;
+    }
 }
 
-@media(min-width: 520px) and (max-width: 1440px){
-    
+@media(min-width: 620px){
+
     .container{
         width: 90%;
     }
@@ -261,7 +299,7 @@ footer{
     }
 
     .btn-menu{
-        padding: 7px 35px;
+        padding: 8px 35px;
     }
 
     #intro p{
@@ -269,11 +307,6 @@ footer{
         position: relative;
         left: 25%;
    }
-
-    .img-response img{
-        width: 60% !important;
-        margin-top: 40px;
-    }
 
     .float_one img{
         width: 45% !important;
@@ -313,17 +346,16 @@ footer{
     .network,
     .attribution{
         position: absolute;
-        left: 5%;
+        left: 4%;
     }
+    
     .attribution{
-       margin: 40px 0;
+        margin: 40px 0px 0px 8px;
     }
 
     .form-footer{
-        position: absolute;
-        top: 0;
-        left: 70%;
-        width: 30%;
+        float: right;
+        width: 350px;
     }
 
     .form-footer h2, p{
@@ -332,17 +364,15 @@ footer{
 
     .input{
         border-radius: 5px;
+        font-size: 16px;
     }
 
     .input-submit{
-        background-color: #FF52BF;
-        color: #ffffff;
         border-radius: 2px;
-        border: 1px solid #FF52BF;
         padding: 15px;
         cursor: pointer;
         width: 50%;
-        margin-left: 50%;
+        margin-left: 50%;   
     }
 
     footer{
@@ -360,28 +390,31 @@ footer{
         left: 50%;
         top: 0;
     }
+
+    .object {
+        width: 65%;
+        height: 115%;
+        position: absolute;
+        right: 25%;
+        top: 8%;
+        border-radius: 80px;
+        transform: rotate(65deg);
+        background: #ffffff;
+        z-index: -2;
+    } 
+    
+    .object-colors {
+        width: 120%;
+        height: 130%;
+        border-radius: 80px;
+        transform: rotate(-40deg);
+        background: linear-gradient(rgb(255, 82, 191), rgb(154, 82, 255));
+        position: absolute;
+        top: -65%;
+        left: 55%;
+        z-index: -1;
+    }  
 }
 
-/* .object::before{
-    content: '';
-    transform: rotate(-45deg);
-    width: 200px;
-    height: 420px;
-    border-radius: 30px;
-    background: #ffffff;
-    position: absolute;
-    right: 300px;
-}
 
-.object-colors::before{
-    content: '';
-    transform: rotate(-30deg);
-    width: 60%;
-    height: 90%;
-    border-radius: 0px;
-    background: linear-gradient(rgb(255, 82, 191), rgb(154, 82, 255));
-    position: absolute;
-    left: 255px;
-    top: -100px;
-} */
 
