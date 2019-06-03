@@ -8,6 +8,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     background: #f6f9fe;
+    /* overflow: hidden; */
 }
 
 .container {
@@ -80,10 +81,6 @@ body {
 
 #wrapper-card {
     padding-bottom: 15%;
-}
-
-.obj {
-    overflow: hidden;
 }
 
 .btn-intro {
@@ -273,6 +270,7 @@ footer{
         transform: rotate(55deg);
         background: #ffffff;
         z-index: -2;
+        
     }
 
     .object-colors {
