@@ -8,13 +8,12 @@ body {
     font-weight: 400;
     font-size: 18px;
     background: #f6f9fe;
-    /* overflow: hidden; */
 }
 
 .container {
     position: relative;
     margin: 0 auto;
-    width: 1440px;
+    /* width: 1440px; */
 }
 
 .menu a {
@@ -64,12 +63,6 @@ body {
 
 #intro{
     padding-bottom: 4rem !important;
-}
-
-.img-response img{
-    width: 80vw;
-    max-width: 700px;
-    margin: 50px 0;
 }
 
 #intro,
@@ -208,6 +201,12 @@ footer{
         width: 40%;
     }
 
+    .img-response img{
+        width: 90%;
+        margin-top: 45px;
+    }
+    
+
     h1, nav {
         margin-top: 18px;
     }
@@ -260,7 +259,7 @@ footer{
         font-size: 13px;
     }
 
-    .object {
+    /* .object {
         width: 165%;
         height: 84%;
         position: absolute;
@@ -283,14 +282,14 @@ footer{
         top: -16%;
         left: 90%;
         z-index: -1;
-    }
+    } */
 }
 
 @media(min-width: 620px){
 
     .container{
         width: 90%;
-    }
+    } 
 
     h1, nav{
         margin-top: 50px;
@@ -299,6 +298,11 @@ footer{
     .btn-menu{
         padding: 8px 35px;
     }
+
+    .img-response img{
+        width: 55%;
+    }
+    
 
     #intro p{
         width: 50%;
@@ -310,6 +314,7 @@ footer{
         width: 45% !important;
         margin-right: 90px;
         float: left;
+        height: 450px;
     }
 
     .float_two{
@@ -389,12 +394,12 @@ footer{
         top: 0;
     }
 
-    .object {
-        width: 65%;
+    /* .object {
+        width: 60%;
         height: 115%;
         position: absolute;
-        right: 25%;
-        top: 8%;
+        right: 30%;
+        top: 9%;
         border-radius: 80px;
         transform: rotate(65deg);
         background: #ffffff;
@@ -411,7 +416,7 @@ footer{
         top: -65%;
         left: 55%;
         z-index: -1;
-    }  
+    }     */
 }
 
 
